@@ -120,35 +120,6 @@ try {
 
 ```
 
-## Handling Notifications
-
-### Command Options
-
-You can customize the notification options by specifying them in your configuration file. The default options can also be overridden in the method call if needed.
-
-### Example of Custom Options
-
-```php
-$options = [
-    'option1' => 'value1',
-    'option2' => 'value2',
-];
-
-$response = $this->apprise->sendNotification($title, $body, $options);
-```
-
-## Logging
-
-The package uses Laravel's logging functionality to log errors when sending notifications fails. You can adjust the log level in the configuration file under `log_level`.
-
-### Example of Logging
-
-When a notification fails, an error will be logged like this:
-
-```plaintext
-[error] Apprise command failed: ...
-```
-
 ## Error Handling
 
 When sending notifications, if any required parameters are missing or if the Apprise command fails, the package will throw an exception. You can handle these exceptions as shown in the usage example.
