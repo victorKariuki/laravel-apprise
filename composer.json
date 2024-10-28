@@ -2,9 +2,7 @@
     "name": "brevaimlabs/laravel-apprise",
     "description": "Laravel integration for the Apprise notification system.",
     "type": "library",
-    "scripts": {
-        "test": "vendor/bin/phpunit"
-    },
+    "version": "1.0.0",
     "require": {
         "php": "^7.4 || ^8.0"
     },
