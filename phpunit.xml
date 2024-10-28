@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="vendor/autoload.php"
-         colors="true"
-         verbose="true"
-         errorOnRisky="true"
-         errorOnDeprecated="true">
-    
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+
     <testsuites>
         <testsuite name="Unit Tests">
             <directory>./tests/Unit</directory>
@@ -17,11 +13,7 @@
         <env name="DB_DATABASE" value=":memory:"/>
     </php>
 
-    <logging>
-        <log type="junit" target="tests/logs/junit.xml"/>
-    </logging>
-
-    <coverage>
+    <coverage processUncoveredFiles="true">
         <include>
             <directory>src</directory>
         </include>
