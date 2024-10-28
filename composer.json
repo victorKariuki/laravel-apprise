@@ -1,0 +1,21 @@
+{
+    "name": "brevaimlabs/laravel-apprise",
+    "description": "Laravel integration for the Apprise notification system.",
+    "type": "library",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/yaml": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrevaimLabs\\LaravelApprise\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BrevaimLabs\\LaravelApprise\\AppriseServiceProvider"
+            ]
+        }
+    }
+}
